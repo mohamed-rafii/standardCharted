@@ -26,7 +26,7 @@ public class DigitalScanner {
         StringBuilder results = new StringBuilder();
         if(input !=null && input.trim().length() > 0){
 
-            List<String> list = new ArrayList<String>(Arrays.asList(input.split("\n")));
+            List<String> list = new ArrayList<String>(Arrays.asList(input.split("\r\n")));
             list.removeAll(Arrays.asList("".trim(), null));//removes all the empty lines
 
             if(list.size() %3 == 0){ // if the number of lines is not mod 3, then it is invalid and exit
